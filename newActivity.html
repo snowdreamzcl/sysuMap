@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" id="newActivity">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>newActivity</title>
+    <link rel="stylesheet" href="css/introduction.css" type="text/css" />
+    <script src="js/comment.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="header" name="header">
+            <img src="img/logo.jpg" alt="logo" />
+        </div>
+        <div name="position" id="position">
+            <ul>
+                <li>你现在的位置：</li>
+                <li>
+                    <a href="eastCampus.html">主页</a>
+                </li>
+                <li>>新学生活动中心 </li>
+            </ul>
+            <hr/>
+        </div>
+
+        <div id="main" name="main">
+            <div name="navigation" id="navigation">
+                <div name="topDecoration" id="topDecoration"></div>
+                <div name="navContent" id="navContent">
+                    <h2>导航</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <a href="#application">申请平台</a>
+                        </li>
+                        <li>
+                            <a href="#openTime">开放时间</a>
+                        </li>
+                        <li>
+                            <a href="#ichnography">平面图</a>
+                        </li>
+                        <li>
+                            <a href="#functionRoom">功能房介绍</a>
+                        </li>
+                        <li>
+                            <a href="#comment">评论</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content" name="content">
+                <h2>新学生活动中心</h2>
+
+                <div name="information" id="information">
+                    <div>
+                        <a name="application">
+                            <h3>申请平台</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            <p>
+                                <a href="http://sac.sysu.edu.cn/login_register">http://sac.sysu.edu.cn/login_register</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a name="openTime">
+                            <h3>开放时间</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            <p>周一至周五开放时间为：14:00-22:30,周六日开放时间为09：00-22：30。如遇节假日或大型活动临时闭馆，详见公众号 “中山大学SAC学生活动中心”的相关通知推送。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a name="ichnography">
+                            <h3>平面图</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            <img src="img/newAcitvity/ichnography.png" alt="平面图">
+                        </div>
+                    </div>
+
+                    <div>
+                        <a name="functionRoom">
+                            <h3>功能房介绍</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            <img src="img/newAcitvity/function1.png" alt="图片1">
+                            <img src="img/newAcitvity/function2.png" alt="图片2">
+                            <img src="img/newAcitvity/function3.png" alt="图片3">
+                            <img src="img/newAcitvity/function4.png" alt="图片4">
+                            <img src="img/newAcitvity/function5.png" alt="图片5">
+                            <img src="img/newAcitvity/function6.png" alt="图片6">
+                        </div>
+                    </div>
+
+                    <div>                            
+                        <a name="comment"><h3>评论</h3></a>
+                        <div class="detail">
+                            <form name="comment_box" id="comment_box" >
+                                <textarea rows="5" name="comment_content" id="comment_content"></textarea>
+                                <button type="submit" name="submit" onclick="submitComment()">评论</button>
+                            </form>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <div name = "comment_list" id="comment_list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div name="footer" id="footer">
+        <p>Copyright © zcl. All rights reserved.</p>
+    </div>
+</body>
+
+</html>

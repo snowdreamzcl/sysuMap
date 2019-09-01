@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" id="publicEducation">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>publicEducation</title>
+    <link rel="stylesheet" href="css/introduction.css" type="text/css" />
+    <script src="js/comment.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="header" name="header">
+            <img src="img/logo.jpg" alt="logo" />
+        </div>
+        <div name="position" id="position">
+            <ul>
+                <li>你现在的位置：</li>
+                <li>
+                    <a href="eastCampus.html">主页</a>
+                </li>
+                <li>> 公教楼 </li>
+            </ul>
+            <hr/>
+        </div>
+
+        <div id="main" name="main">
+            <div name="navigation" id="navigation">
+                <div name="topDecoration" id="topDecoration"></div>
+                <div name="navContent" id="navContent">
+                    <h2>导航</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <a href="#layout">布局</a>
+                        </li>
+                        <li>
+                            <a href="#empty">空教室查询</a>
+                        </li>
+                        <li>
+                            <a href="#picture">图片介绍</a>
+                        </li>
+                        <li>
+                            <a href="#comment">评论</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content" name="content">
+                <h2>公教楼</h2>
+
+                <div name="information" id="information">
+                    <div>
+                        <a name="layout">
+                            <h3>布局</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            楼层分布：从南向北依次是A、B、C、D、E栋楼。
+                            <br> 饮水机分布:
+                            <br>
+                            <table>
+                                <tr>
+                                    <th></th>
+                                    <th>E栋</th>
+                                    <th>D栋</th>
+                                    <th>C栋</th>
+                                    <th>B栋</th>
+                                    <th>A栋</th>
+                                </tr>
+                                <tr>
+                                    <th>5层</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>√</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th>4层</th>
+                                    <th></th>
+                                    <th>√</th>
+                                    <th>√</th>
+                                    <th>√</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th>3层</th>
+                                    <th></th>
+                                    <th>√</th>
+                                    <th>√</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th>2层</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>√</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th>1层</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a name="empty">
+                            <h3>空教室查询</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            登录本科教务系统，执行【所有教务】|【空教室查询】，输入校区、教学楼、节数等筛选条件进行查询。
+                        </div>
+                    </div>
+
+                    <div>
+                        <a name="picture">
+                            <h3>图片介绍</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                        </div>
+                    </div>
+                    <div>                            
+                        <a name="comment"><h3>评论</h3></a>
+                        <div class="detail">
+                            <form name="comment_box" id="comment_box" >
+                                <textarea rows="5" name="comment_content" id="comment_content"></textarea>
+                                <button type="submit" name="submit" onclick="submitComment()">评论</button>
+                            </form>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <div name = "comment_list" id="comment_list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div name="footer" id="footer">
+        <p>Copyright © zcl. All rights reserved.</p>
+    </div>
+</body>
+
+</html>

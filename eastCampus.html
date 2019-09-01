@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>EastOverview</title>
+	<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+	<link type="text/css" rel="stylesheet" href="css/eastcampus.css">
+	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/eastcampus.js"> </script>
+	
+</head>
+
+<body>
+	<div id="navigation">
+		<img src="img/mainLogo.png"/>
+		<div id="mainNav">
+			<div class="imgBox">
+				<div class="img">
+					<img id="study" onclick="select(this)" src="img/eastCampus/study.jpg" alt="图片">
+					<div class="desc">学在中大</div>
+				</div>
+			</div>
+			<div class="imgBox">
+				<div class="img">
+					<img id="eat" onclick="select(this)" src="img/eastCampus/eat.jpg" alt="图片">
+					<div class="desc">食在中大</div>
+				</div>
+			</div>
+			<div class="imgBox">
+				<div class="img">
+					<img id="residence" onclick="select(this)" src="img/eastCampus/residence.jpg" alt="图片">
+					<div class="desc">住在中大</div>
+				</div>
+			</div>
+			<div class="imgBox">
+				<div class="img">
+					<img id="office" onclick="select(this)" src="img/eastCampus/office.jpg" alt="图片">
+					<div class="desc">办公中大</div>
+				</div>
+			</div>
+			<div class="imgBox">
+				<div class="img">
+					<img id="sport" onclick="select(this)" src="img/eastCampus/sport.jpg" alt="图片">
+					<div class="desc">动在中大</div>
+				</div>
+			</div>
+			<div class="imgBox">
+				<div class="img">
+					<img id="tour" onclick="select(this)" src="img/eastCampus/tour.jpg" alt="图片">
+					<div class="desc">玩在中大</div>
+				</div>
+			</div>
+			<div class="imgBox">
+				<div class="img">
+					<img id="use" onclick="select(this)" src="img/eastCampus/use.jpg" alt="图片">
+					<div class="desc">用在中大</div>
+				</div>
+			</div>
+			<div class="imgBox">
+				<div class="img">
+					<img id="traffic" onclick="select(this)" src="img/eastCampus/traffic.jpg" alt="图片">
+					<div class="desc">行在中大</div>
+				</div>
+			</div>
+		</div>
+		<i class="fa fa-angle-double-left" id="hideNavigation" onclick="hiddenNavigation()"></i>
+		<i class="fa fa-angle-double-right" id="expendNavigation" onclick="expendNavigation()"></i>
+		<i class="fa fa-book" id="bookMapButton" onclick="showBookMap()"></i>
+		<i class="fa fa-map" id="baiduMapButton" onclick="showBaiduMap()"></i>
+		<i class="fa fa-toggle-on" id="showLocation" onclick="showLocation()"></i>
+		<i class="fa fa-toggle-off" id="hideLocation" onclick="hideLocation()"></i>
+	</div>
+
+	<div id ="book">
+		<img id="bookImg" src="img/eastCampus/book.png">
+
+		<div id="baiduMap"></div>
+
+		<div id="map">
+			<img src="img/eastCampus.png">
+			<div class="studyIndex place" id="publicEducateBuildIndex">
+				<p>公教楼</p>
+				<a href="publicEducation.html" target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="studyIndex place" id="libraryIndex">
+				<p>图书馆</p>
+				<a href="library.html" target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="studyIndex place" id="newActivityCenterIndex">
+				<p>新学生活动中心</p>
+				<a href="newActivity.html" target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="studyIndex place" id="southLaboratoryIndex">
+				<p>南实验楼</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="studyIndex place" id="northLaboratoryIndex">
+				<p>北实验楼</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+
+			<div class="eatIndex place" id="firstRestrIndex">
+				<p>一饭</p>
+				<a href="firstRestaurant.html" target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="eatIndex place" id="secondRestrIndex">
+				<p>二饭</p>
+				<a href="secondRestaurant.html" target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="eatIndex place" id="fouthRestrIndex">
+				<p>四饭</p>
+				<a href="fourthRestaurant.html" target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="eatIndex place" id="islamicRestrIndex">
+				<p>清真饭堂</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="eatIndex place" id="adminRestrIndex">
+				<p>行政饭堂</p>
+				<a href="administrativeRestaurant.html" target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+
+			<div class="residenceIndex place" id="shenSiIndex">
+				<p>慎思园</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="residenceIndex place" id="mingDeIndex">
+				<p>明德园</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="residenceIndex place" id="zhiShanIndex">
+				<p>至善园</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="residenceIndex place" id="geZhiIndex">
+				<p>格致园</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+
+			<div class="officeIndex place" id="adminBuildingIndex">
+				<p>行政楼</p>
+				<a href="administrativeBuilding.html" target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="officeIndex place" id="sysuIndex">
+				<p>数据学院</p>
+				<a href="http://sdcs.sysu.edu.cn/" target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+
+			<div class="sportIndex place" id="gymIndex">
+				<p>体育馆</p>
+				<a href="gym.html" target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="sportIndex place" id="natatoriaIndex">
+				<p>游泳馆</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="sportIndex place" id="naturalGrassIndex">
+				<p>真草</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+
+			<div class="tourIndex place" id="grainRiverIndex">
+				<p>谷河</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="tourIndex place" id="memorialArchwayIndex">
+				<p>牌坊</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="tourIndex place" id="bronzeIndex">
+				<p>孙中山铜像</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+
+			<div class="useIndex place" id="schoolHospitalIndex">
+				<p>校医院</p>
+				<a href="hospital.html" target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="useIndex place" id="serverCenterIndex">
+				<p>服务中心</p>
+				<a href="serverCenter.html" target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+
+			<div class="trafficIndex place" id="station1Index">
+				<p>校车点1</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="trafficIndex place" id="station2Index">
+				<p>校车点2</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="trafficIndex place" id="station3Index">
+				<p>校车点3</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+			<div class="trafficIndex place" id="station4Index">
+				<p>校车点4</p>
+				<a target="_blank">
+					<img src="img/eastCampus/position.png">
+				</a>
+			</div>
+		</div>
+
+		<div id="buttonBox">
+			<button id="publicEducateBuild" class="study singleBtn" onclick="showPlace(this)">公教楼</button>
+			<button id="library" class="study singleBtn" onclick="showPlace(this)">图书馆</button>
+			<button id="newActivityCenter" class="study singleBtn" onclick="showPlace(this)">新学生活动中心</button>
+			<button id="southLaboratory" class="study singleBtn" onclick="showPlace(this)">南实验楼</button>
+			<button id="northLaboratory" class="study singleBtn" onclick="showPlace(this)">北实验楼</button>
+
+			<button id="firstRestr" class="eat singleBtn" onclick="showPlace(this)">一饭</button>
+			<button id="secondRestr" class="eat singleBtn" onclick="showPlace(this)">二饭</button>
+			<button id="fouthRestr" class="eat singleBtn" onclick="showPlace(this)">四饭</button>
+			<button id="islamicRestr" class="eat singleBtn" onclick="showPlace(this)">清真饭堂</button>
+			<button id="adminRestr" class="eat singleBtn" onclick="showPlace(this)">行政餐厅</button>
+
+			<button id="shenSi" class="residence singleBtn" onclick="showPlace(this)">慎思园</button>
+			<button id="mingDe" class="residence singleBtn" onclick="showPlace(this)">明德园</button>
+			<button id="zhiShan" class="residence singleBtn" onclick="showPlace(this)">至善园</button>
+			<button id="geZhi" class="residence singleBtn" onclick="showPlace(this)">格致园</button>
+
+			<button id="adminBuilding" class="office singleBtn" onclick="showPlace(this)">行政楼</button>
+			<button id="sysu" class="office singleBtn" onclick="showPlace(this)">数据学院</button>
+
+			<button id="gym" class="sport singleBtn" onclick="showPlace(this)">体育馆</button>
+			<button id="natatoria" class="sport singleBtn" onclick="showPlace(this)">游泳馆</button>
+			<button id="naturalGrass" class="sport singleBtn" onclick="showPlace(this)">真草</button>
+
+			<button id="grainRiver" class="tour singleBtn" onclick="showPlace(this)">谷河</button>
+			<button id="memorialArchway" class="tour singleBtn" onclick="showPlace(this)">牌坊</button>
+			<button id="bronze" class="tour singleBtn" onclick="showPlace(this)">孙中山铜像</button>
+
+			<button id="schoolHospital" class="use singleBtn" onclick="showPlace(this)">校医院</button>
+			<button id="serverCenter" class="use singleBtn" onclick="showPlace(this)">服务中心</button>
+
+			<button id="station1" class="traffic singleBtn" onclick="showPlace(this)">校车点1</button>
+			<button id="station2" class="traffic singleBtn" onclick="showPlace(this)">校车点2</button>
+			<button id="station3" class="traffic singleBtn" onclick="showPlace(this)">校车点3</button>
+			<button id="station4" class="traffic singleBtn" onclick="showPlace(this)">校车点4</button>
+
+			<button id="all" class="singleBtn" onclick="clickAllBtn(this)">显示全部</button>
+		</div>
+	</div>
+</body>
+
+</html>

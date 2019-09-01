@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" id="secondRestaurant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>secondRestaurant</title>
+    <link rel="stylesheet" href="css/introduction.css" type="text/css" />
+    <script src="js/comment.js"></script>
+</head>
+<body>
+        <div class="wrapper">
+    	<div id="header" name="header">
+                <img src="img/logo.jpg" alt="logo" />   
+            </div>
+            <div name="position" id="position">
+                <ul>
+                <li>你现在的位置：</li>
+                <li><a href="eastCampus.html">主页</a> </li>
+                <li>>二饭 </li>        
+                </ul>
+                <hr/>
+            </div>
+            
+            <div id="main" name="main">
+                <div name="navigation" id="navigation">
+                    <div name="topDecoration" id="topDecoration"></div>
+                    <div name="navContent" id="navContent">
+                    <h2>导航</h2>
+                    <hr/>
+                    <ul>
+                        <li><a href="#introduce">简介</a></li>
+                        <li><a href="#openTime">开放时间</a></li>
+                        <li><a href="#picture">图片介绍</a></li>
+                        <li><a href="#comment">评论</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div id="content" name="content">
+                    <h2>二饭</h2>
+                    
+                    <div name="information" id="information">
+                        <div>
+                            <a name="introduce"><h3>简介</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <p>东校区第二饭堂位于第二层，菜色可人，色香味俱全，包括自选，扒饭，铁板，肠粉，蒸面，滑蛋饭等，还有饮品店薇意水吧。</p>
+                            </div>
+                        </div>
+                    
+                        <div>
+                            <a name="openTime"><h3>开放时间</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <table>
+                                    <tr>
+                                        <td>早餐</td>
+                                        <td>06:00-09:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>午餐</td>
+                                        <td>11:00-13:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>晚餐</td>
+                                        <td>17:00-19:00</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a name="picture"><h3>图片介绍</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <img src="img/secondRestaurant/1.jpg">
+                                <img src="img/secondRestaurant/2.jpg">
+                            </div>
+                        </div>                    
+                        <div>                            
+                            <a name="comment"><h3>评论</h3></a>
+                            <div class="detail">
+                                <form name="comment_box" id="comment_box" >
+                                    <textarea rows="5" name="comment_content" id="comment_content"></textarea>
+                                    <button type="submit" name="submit" onclick="submitComment()">评论</button>
+                                </form>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <div name = "comment_list" id="comment_list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>	
+            </div>
+        </div>    
+            <div name="footer" id="footer">
+                <p>Copyright © zcl. All rights reserved.</p>
+            </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" id="serverCenter">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>serverCenter</title>
+    <link rel="stylesheet" href="css/introduction.css" type="text/css" />
+    <script src="js/comment.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="header" name="header">
+            <img src="img/logo.jpg" alt="logo" />
+        </div>
+        <div name="position" id="position">
+            <ul>
+                <li>你现在的位置：</li>
+                <li> 
+                    <a href="eastCampus.html">主页</a>
+                </li>
+                <li> > 学生服务中心 </li>
+            </ul>
+            <hr/>
+        </div>
+
+        <div id="main" name="main">
+            <div name="navigation" id="navigation">
+                <div name="topDecoration" id="topDecoration"></div>
+                <div name="navContent" id="navContent">
+                    <h2>导航</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <a href="#rookiePost">快递</a>
+                        </li>
+                        <li>
+                            <a href="#campusCard">校园卡服务中心</a>
+                        </li>
+                        <li>
+                            <a href="#activity">学生活动中心</a>
+                        </li>
+                        <li>
+                            <a href="#psychology">心理咨询中心</a>
+                        </li>
+                        <li><a href="#comment">评论</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content" name="content">
+                <h2>学生服务中心</h2>
+
+                <div name="information" id="information">
+                    <div>
+                        <a name="rookiePost">
+                            <h3>快递</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            <p>
+                                <strong>大学城邮政支局：</strong>
+                                <br>
+                            </p>
+                            营业时间:
+                            <br>
+                            <table>
+                                <tr>
+                                    <td>周一至周五</td>
+                                    <td>09:30-17:30</td>
+                                </tr>
+                                <tr>
+                                    <td>周六</td>
+                                    <td>10:00-16:00</td>
+                                </tr>
+                            </table>
+                            本地邮政编号：510006
+                            <br>
+                            <br>
+                            <strong>快递中心:</strong>
+                            <br> 营业时间：周一至周五09:00-19:00
+                        </div>
+                    </div>
+
+                    <div>
+                        <a name="campusCard">
+                            <h3>校园卡服务中心</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            周一二三、五 10:00-17:00（中午不休息）
+                            <br> 周四 10:00-13:00， 周四下午不对外
+                            <br> 节假日对外时间：按国家法定节假日时间调整，寒暑假时间另行通知
+                            <img src="img/serveCenter/campusCard1.jpg">
+                        </div>
+                    </div>
+
+                    <div>
+                        <a name="activity">
+                            <h3>学生活动中心</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            为学生活动如歌唱比赛、公益活动等提供场地，设备等资源。
+                            <img src="img/serveCenter/activity1.jpg">
+                        </div>
+                    </div>
+
+                    <div>
+                        <a name="psychology">
+                            <h3>心理咨询中心</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            <strong>服务项目：</strong>
+                            <br>
+                            <ul>
+                                <li>个体心理咨询</li>
+                                <li>心理测试</li>
+                                <li>成长团体</li>
+                                <li>新生身心生活适应状况普查</li>
+                                <li>校园心理健康教育推广</li>
+                            </ul>
+                            <strong>工作时间：</strong>
+                            <br>
+                            <table>
+                                <tr>
+                                    <td rowspan="2">预约时间</td>
+                                    <td>周一至周五</td>
+                                </tr>
+                                <tr>
+                                    <td>上午8:30至晚上6:00</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">咨询时间</td>
+                                    <td>周一至周五</td>
+                                </tr>
+                                <tr>
+                                    <td>上午9:00至11:00</td>
+                                </tr>
+                                <tr>
+                                    <td>下午2:00至5:00</td>
+                                </tr>
+                                <tr>
+                                    <td>预约电话</td>
+                                    <td>39332520</td>
+                                </tr>
+                            </table>
+                            <img src="img/serveCenter/psychology1.jpg">
+                            <img src="img/serveCenter/psychology2.jpg">
+                        </div>
+                    </div>
+                    <div>                            
+                        <a name="comment"><h3>评论</h3></a>
+                        <div class="detail">
+                            <form name="comment_box" id="comment_box" >
+                                <textarea rows="5" name="comment_content" id="comment_content"></textarea>
+                                <button type="submit" name="submit" onclick="submitComment()">评论</button>
+                            </form>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <div name = "comment_list" id="comment_list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div name="footer" id="footer">
+        <p>Copyright © zcl. All rights reserved.</p>
+    </div>
+</body>
+
+</html>

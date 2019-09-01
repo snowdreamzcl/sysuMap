@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" id="hospital">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hospital</title>
+    <link rel="stylesheet" href="css/introduction.css" type="text/css" />
+    <script src="js/comment.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+    	<div id="header" name="header">
+                <img src="img/logo.jpg" alt="logo" />   
+            </div>
+            <div name="position" id="position">
+                <ul>
+                <li>你现在的位置：</li>
+                <li><a href="eastCampus.html">主页</a> </li>
+                <li>>校医院 </li>        
+                </ul>
+                <hr/>
+            </div>
+            
+            <div id="main" name="main">
+                <div name="navigation" id="navigation">
+                    <div name="topDecoration" id="topDecoration"></div>
+                    <div name="navContent" id="navContent">
+                    <h2>导航</h2>
+                    <hr/>
+                    <ul>
+                        <li><a href="#link">链接</a></li>
+                        <li><a href="#openTime">开放时间</a></li>
+                        <li><a href="#guidance">就诊说明</a></li>
+                        <li><a href="#reimburse">医疗报销</a></li>    
+                        <li><a href="#comment">评论</a></li>                 
+                    </ul>
+                    </div>
+                </div>
+                <div id="content" name="content">
+                    <h2>校医院</h2>
+                    
+                    <div name="information" id="information">
+                        <div>
+                            <a name="link"><h3>链接</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <a href="http://xsybw.sysu.edu.cn">http://xsybw.sysu.edu.cn</a>
+                            </div>
+                        </div>
+                        <div>
+                            <a name="openTime"><h3>开放时间</h3></a>
+                            <hr />
+                            <div class="detail">
+                                周二至周五 9:00 - 13:00  14:30 - 17:00 <br>
+                                周六、周日 9:00 - 12:00 <br>
+                                其余时间为急诊时间 <br>
+                                急诊电话：39332120
+                            </div>
+                        </div>
+                        <div>
+                            <a name="guidance"><h3>就诊说明</h3></a>
+                            <hr />
+                            <div class="detail">
+                                一楼挂号处领取号码，在诊室门口等待，就诊结束后可到一楼药房取药。转诊单需要在挂号处进行盖章才有效。
+                            </div>
+                        </div>
+                        <div>
+                            <a name="reimburse"><h3>医疗报销</h3></a>
+                            <hr />
+                            <div class="detail">
+                                地点：校医院二楼208室 <br> 时间：周二、周五： 9:00 - 13:00
+                            </div>
+                        </div>
+                        <div>                            
+                            <a name="comment"><h3>评论</h3></a>
+                            <div class="detail">
+                                <form name="comment_box" id="comment_box" >
+                                    <textarea rows="5" name="comment_content" id="comment_content"></textarea>
+                                    <button type="submit" name="submit" onclick="submitComment()">评论</button>
+                                </form>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <div name = "comment_list" id="comment_list"></div>
+                            </div>
+                        </div>             
+                    </div>
+                </div>	
+            </div>
+        </div>        
+            <div name="footer" id="footer">
+                <p>Copyright © zcl. All rights reserved.</p>
+            </div>
+</body>
+</html>

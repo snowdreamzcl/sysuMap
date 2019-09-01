@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" id="administrativeRestaurant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>administrativeRestaurant</title>
+    <link rel="stylesheet" href="css/introduction.css" type="text/css" />
+    <script src="js/comment.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="header" name="header">
+            <img src="img/logo.jpg" alt="logo" />
+        </div>
+        <div name="position" id="position">
+            <ul>
+                <li>你现在的位置：</li>
+                <li>
+                    <a href="eastCampus.html">主页</a>
+                </li>
+                <li>>行政餐厅 </li>
+            </ul>
+            <hr/>
+        </div>
+
+        <div id="main" name="main">
+            <div name="navigation" id="navigation">
+                <div name="topDecoration" id="topDecoration"></div>
+                <div name="navContent" id="navContent">
+                    <h2>导航</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <a href="#introduce">简介</a>
+                        </li>
+                        <li>
+                            <a href="#openTime">营业时间</a>
+                        </li>
+                        <li>
+                            <a href="#dishes">菜品介绍</a>
+                        </li>
+                        <li>
+                            <a href="#picture">图片介绍</a>
+                        </li>
+                        <li><a href="#comment">评论</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content" name="content">
+                <h2>行政餐厅</h2>
+
+                <div name="information" id="information">
+                    <div>
+                        <a name="introduce">
+                            <h3>简介</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            <p>
+                                行政楼餐厅位于东校区行政楼A座，一共两层，坐落于谷河旁边，是中山大学东校园教学区里唯一的一座教师 学生都可使用的食堂，为教师学生的工作学习生活带来了极大的方便。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a name="openTime">
+                            <h3>营业时间</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            <table>
+                                <tr>
+                                    <td>早餐：</td>
+                                    <td>07:00-10:00</td>
+                                </tr>
+                                <tr>
+                                    <td>午餐:</td>
+                                    <td>10:45-13:20</td>
+                                </tr>
+                                <tr>
+                                    <td>下午茶:</td>
+                                    <td>14:00-16:00</td>
+                                </tr>
+                                <tr>
+                                    <td>晚饭:</td>
+                                    <td>16:45-19:00</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a name="dishes">
+                            <h3>菜品介绍</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            <p>
+                                行政楼餐厅提供各色菜品，主要包括套餐区和自选菜区。特色套餐主要有：香煎鸡扒套餐（香煎鸡扒+番茄炒蛋+米饭+饮品） 、西洋炒饭套餐（西洋炒饭+咖喱杂菜+饮品）、洋葱烟肉辣汁意粉套餐（洋葱烟肉辣汁意粉+青菜+饮品）、咖喱牛腩饭套餐 （咖喱牛腩+香草土豆焗蛋+米饭+饮品）。
+                                自选菜品主要包括：秘制叉烧、葱姜白切鸡、风味捞面、上汤云吞、吉列龙利鸡 扒饭、酸辣土豆丝、豉汁金瓜蒸排骨、鸡柳豆角炒香干、蒜泥拍青瓜、蒜油灼西兰花、生灼青菜（白菜）、咖喱薯仔焖鸡、
+                                小瓜炒肉片、西式罗宋汤等。
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <a name="picture">
+                            <h3>图片介绍</h3>
+                        </a>
+                        <hr />
+                        <div class="detail">
+                            <img src="img/administrativeRestaurant/1.png" />
+                            <img src="img/administrativeRestaurant/2.png" />
+                            <img src="img/administrativeRestaurant/3.png" />
+                            <img src="img/administrativeRestaurant/4.png" />
+                        </div>
+                    </div>
+                    <div>                            
+                        <a name="comment"><h3>评论</h3></a>
+                        <div class="detail">
+                            <form name="comment_box" id="comment_box" >
+                                <textarea rows="5" name="comment_content" id="comment_content"></textarea>
+                                <button type="submit" name="submit" onclick="submitComment()">评论</button>
+                            </form>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <div name = "comment_list" id="comment_list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div name="footer" id="footer">
+        <p>Copyright © zcl. All rights reserved.</p>
+    </div>
+</body>
+
+</html>

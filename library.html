@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" id="library">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>library</title>
+    <link rel="stylesheet" href="css/introduction.css" type="text/css" />
+    <script src="js/comment.js"></script>
+</head>
+<body>
+        <div class="wrapper">
+    	<div id="header" name="header">
+                <img src="img/logo.jpg" alt="logo" />   
+            </div>
+            <div name="position" id="position">
+                <ul>
+                <li>你现在的位置：</li>
+                <li><a href="eastCampus.html">主页</a> </li>
+                <li>>图书馆 </li>        
+                </ul>
+                <hr/>
+            </div>
+            
+            <div id="main" name="main">
+                <div name="navigation" id="navigation">
+                    <div name="topDecoration" id="topDecoration"></div>
+                    <div name="navContent" id="navContent">
+                    <h2>导航</h2>
+                    <hr/>
+                    <ul>
+                        <li><a href="#introduce">简介</a></li>
+                        <li><a href="#serveTime">服务时间</a></li>
+                        <li><a href="#borrowGuidance">借书指引</a></li>
+                        <li><a href="#appointment">预约服务</a></li>
+                        <li><a href="#renewal">续借服务</a></li>
+                        <li><a href="#comment">评论</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div id="content" name="content">
+                    <h2>图书馆</h2>
+                    
+                    <div name="information" id="information">
+                        <div>
+                            <a name="introduce"><h3>简介</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <p>中山大学东校园图书馆是中山大学4个校区图书馆之一，位于广州大学城，于2004年11月8日正式投入使用。 
+                                    图书馆是中山大学广州校区东校园的标志性建筑之一。从外观来看，整个建筑庄严大气，气势宏伟。
+                                    </p>
+                                <img src="img/library/library.png" alt="图书馆">
+                            </div>
+                        </div>
+                    
+                        <div>
+                            <a name="serveTime"><h3>服务时间</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <img src="img/library/serveTime.png">
+                            </div>
+                        </div>
+                    
+                        <div>
+                            <a name="borrowGuidance"><h3>借书指引</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <img src="img/library/borrowGuidance.png" >
+                            </div>
+                        </div>
+
+                        <div>
+                            <a name="appointment"><h3>预约服务</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <p>读者可以预约任一校区的外借书及非本校区的在架书。</p> 
+                                <p>预约借书的办理方法：读者请登录图书馆OPAC系统后提交预约申请。</p>
+                                <p>具体操作方式如下：</p>
+                                <ol>
+                                  <li>登录我的图书馆，如果您是第一次登录，请在“更新地址”里，确认您的邮箱地址。</li>
+                                  <li>在OPAC中检索到要预约的单册。</li>
+                                  <li>点击预约按钮。</li>
+                                  <li>选择“取书地点”和“感兴趣阶段”，点击确定。</li>
+                                  <li>预约图书到馆后，图书馆会及时以E-mail通知读者取书。接到通知的读者请尽快到图书馆二楼圆形服务台借书
+                                    处办理借阅手续。预约图书在预约架上保留7天，过期未取的图书将从预约架上撤下，进入正常流通。</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a name="renewal"><h3>续借服务</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <p>在每册图书30天借期到期前，如无其他读者预约，可续借1次，续借期不超过30天，但图书借出当天不能续借。</p>        
+                                <p>续借的办理方式：读者可通过图书馆主页（<a href="http://library.sysu.edu.cn">http://library.sysu.edu.cn</a>）
+                                  注册“我的图书馆”后，在网上自助办理续借。</p>
+                            </div>
+                        </div>
+
+                        <div>                            
+                            <a name="comment"><h3>评论</h3></a>
+                            <div class="detail">
+                                <form name="comment_box" id="comment_box" >
+                                    <textarea rows="5" name="comment_content" id="comment_content"></textarea>
+                                    <button type="submit" name="submit" onclick="submitComment()">评论</button>
+                                </form>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <div name = "comment_list" id="comment_list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>	
+            </div>
+       </div>   
+       <div id="last"></div>  
+            <div name="footer" id="footer">
+                <p>Copyright © zcl. All rights reserved.</p>
+            </div>
+</body>
+</html>

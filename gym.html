@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" id="gym">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gym</title>
+    <link rel="stylesheet" href="css/introduction.css" type="text/css" />
+    <script src="js/comment.js"></script>
+</head>
+<body>
+        <div class="wrapper">
+    	<div id="header" name="header">
+                <img src="img/logo.jpg" alt="logo" />   
+            </div>
+            <div name="position" id="position">
+                <ul>
+                <li>你现在的位置：</li>
+                <li><a href="eastCampus.html">主页</a> </li>
+                <li>>体育馆 </li>        
+                </ul>
+                <hr/>
+            </div>
+            
+            <div id="main" name="main">
+                <div name="navigation" id="navigation">
+                    <div name="topDecoration" id="topDecoration"></div>
+                    <div name="navContent" id="navContent">
+                    <h2>导航</h2>
+                    <hr/>
+                    <ul>
+                        <li><a href="#introduce">简介</a></li>
+                        <li><a href="#openTime">开放时间</a></li>
+                        <li><a href="#picture">图片介绍</a></li>     
+                        <li><a href="#comment">评论</a></li>                 
+                    </ul>
+                    </div>
+                </div>
+                <div id="content" name="content">
+                    <h2>体育馆</h2>
+                    
+                    <div name="information" id="information">
+                        <div>
+                            <a name="introduce"><h3>简介</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <p>中山大学东校区的多功能体育馆位于大学城中山大学新校区主轴线最南端，第八届全国民族运动会、
+                                全国运动会在中大的体育馆举办，2010年的广州亚运会排球比赛项目也在这里举办。</p>
+                                <p>体育馆主要包括主馆和三层副馆，能够满足篮球、排球、网球、羽毛球、乒乓球、手球等国际性体育比赛的需求。
+                                体育馆可同时容纳5000名观众，其中1700多个座椅可根据比赛需要伸缩移动。</p>
+                                <p>体育馆顶层天花板采用K-13植物纤维材料，具有较好的隔热和吸音功能，管内通风、采光良好，比赛场地铺有优质
+                                枫木地板。馆内设施完善，功能齐全，。育设施包括：田径场、足球场、网球场、排球场、乒乓球室、棒球场、垒球场、健身房、艺术体操房、力
+                                量训练场、水上运动基地等。此外还配置了高标准的灯光、音响、电子显示屏、网络、通讯等设备，设有赛区筹备办公室、新闻中心、兴奋剂检测
+                                中心、各类人员休息室、洗浴室等功能房。</p>
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <div>
+                            <a name="openTime"><h3>开放时间</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <img src="img/gym/opentime.png" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <a name="picture"><h3>图片介绍</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <img src="img/gym/1.png" />
+                                <img src="img/gym/2.png" />
+                                <img src="img/gym/3.png" />
+                                <img src="img/gym/4.png" />
+                                <img src="img/gym/5.png" />
+                            </div>
+                        </div>                   
+                        <div>                            
+                            <a name="comment"><h3>评论</h3></a>
+                            <div class="detail">
+                                <form name="comment_box" id="comment_box" >
+                                    <textarea rows="5" name="comment_content" id="comment_content"></textarea>
+                                    <button type="submit" name="submit" onclick="submitComment()">评论</button>
+                                </form>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <div name = "comment_list" id="comment_list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>	
+            </div>
+        </div>   
+            <div name="footer" id="footer">
+                <p>Copyright © zcl. All rights reserved.</p>
+            </div>
+</body>
+</html>

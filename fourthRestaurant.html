@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" id="fourthRestaurant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fourthRestaurant</title>
+    <link rel="stylesheet" href="css/introduction.css" type="text/css" />
+    <script src="js/comment.js"></script>
+</head>
+<body>
+        <div class="wrapper">
+    	<div id="header" name="header">
+                <img src="img/logo.jpg" alt="logo" />   
+            </div>
+            <div name="position" id="position">
+                <ul>
+                <li>你现在的位置：</li>
+                <li><a href="eastCampus.html">主页</a> </li>
+                <li>>四饭 </li>        
+                </ul>
+                <hr/>
+            </div>
+            
+            <div id="main" name="main">
+                <div name="navigation" id="navigation">
+                    <div name="topDecoration" id="topDecoration"></div>
+                    <div name="navContent" id="navContent">
+                    <h2>导航</h2>
+                    <hr/>
+                    <ul>
+                        <li><a href="#introduce">简介</a></li>
+                        <li><a href="#openTime">开放时间</a></li>
+                        <li><a href="#picture">图片介绍</a></li>  
+                        <li><a href="#comment">评论</a></li>                     
+                    </ul>
+                    </div>
+                </div>
+                <div id="content" name="content">
+                    <h2>四饭</h2>
+                    
+                    <div name="information" id="information">
+                        <div>
+                            <a name="introduce"><h3>简介</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <p>四饭作为中山大学直属饭堂，有着良好的饮食卫生环境，丰富多样的口味选择，有冷气开放。同时，四饭还负责节假日期间
+                                    的伙食供应，四饭的南部暂时性融合了清真饭堂。</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a name="openTime"><h3>开放时间</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <table>
+                                    <tr>
+                                        <td>早餐：</td>
+                                        <td>07：00-09：30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>午餐:</td>
+                                        <td>11：00-13：00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>下午茶:</td>
+                                        <td>14:00-16:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>晚饭:</td>
+                                        <td>17：00-19：00</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a name="picture"><h3>图片介绍</h3></a>
+                            <hr />
+                            <div class="detail">
+                                <img src="img/fourthRestaurant/1.png" >
+                                <img src="img/fourthRestaurant/2.png" >
+                            </div>
+                        </div>
+                        
+                        <div>                            
+                            <a name="comment"><h3>评论</h3></a>
+                            <div class="detail">
+                                <form name="comment_box" id="comment_box" >
+                                    <textarea rows="5" name="comment_content" id="comment_content"></textarea>
+                                    <button type="submit" name="submit" onclick="submitComment()">评论</button>
+                                </form>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <div name = "comment_list" id="comment_list"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>	
+            </div>
+        </div> 
+            <div name="footer" id="footer">
+                <p>Copyright © zcl. All rights reserved.</p>
+            </div>
+</body>
+</html>
