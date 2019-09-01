@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  height: 100%;
+  text-align: center;
+  background: url("../img/mainbg.png");
+  background-size: cover;
+}
+
+#header img {
+  padding-top: 20px;
+  width: 380px;
+}
+#header a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+#header a:hover,
+#header a:active {
+  color: #014726;
+}
+#navigation {
+  list-style: none;
+  margin-top: 30px;
+}
+
+#navigation li {
+  display: inline-block;
+  width: 150px;
+}
+
+#footer {
+  height: 50px;
+  background: rgb(51, 51, 51);
+}
+#footer p {
+  font-size: small;
+  padding-top: 1%;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #97cadb;
+  background-size: cover;
+}
+@keyframes leftMove {
+  from {
+    left: 0;
+  }
+  to {
+    left: -94%;
+  }
+}
+@keyframes rightMove {
+  form {
+    left: -94%;
+  }
+  to {
+    left: 0;
+  }
+}
+#navigation {
+  border-radius: 0 20px 20px 0;
+  -moz-border-radius: 0 20px 20px 0; /* 老的 Firefox */
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 98%;
+  min-height: 655px;
+  background: url("../img/mainbg.png");
+  background-size: cover;
+  z-index: 30;
+}
+#navigation>img {
+  width: 200px;
+}
+#expendNavigation, #bookMapButton, #baiduMapButton, #showLocation, #hideLocation{
+  display: none;
+}
+
+#hideNavigation,
+#expendNavigation {
+  position: absolute;
+  bottom: 47%;
+  right: 1%;
+  font-size: 40px;
+}
+
+#baiduMapButton, #bookMapButton {
+  position: absolute;
+  bottom: 57%;
+  right: 1%;
+  font-size: 20px;
+}
+#showLocation, #hideLocation {
+  position: absolute;
+  bottom: 67%;
+  right: 1%;
+  font-size: 22px;
+}
+#mainNav {
+  width: 80%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+.imgBox {
+  float: left;
+}
+#mainNav .imgBox {
+  margin-top: 2%;
+  margin-bottom: 8%;
+  margin-left: 10%;
+}
+
+div.img {
+  width: 150px;
+  height: 150px;
+}
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.imgBox img:hover {
+  cursor: pointer;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+#book {
+  position: relative;
+  left: 85px;
+  top: 35px;
+}
+#buttonBox,
+#map > img {
+  border-radius: 5px;
+}
+#buttonBox {
+  position: absolute;
+  left: 660px;
+  top: 25px;
+  box-sizing: border-box;
+  padding: 4% 0 4% 4%;
+  width: 510px;
+  height: 600px;
+  background-color: #006f3f;
+}
+.singleBtn {
+  background-color: #006f3f;
+  border: none;
+  width: 27%;
+  padding: 1%;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  text-align: left;
+  font-size: 16px;
+  display: none;
+}
+.singleBtn:hover {
+  cursor: pointer;
+}
+
+#baiduMap {
+  width: 1040px;
+  height: 560px;
+  z-index: -1;
+  position: absolute;
+  left: 100px;
+  top: 45px;
+  border:#ccc solid 1px;
+  box-shadow: -10px -15px 10px #888888;
+}
+
+
+#map{
+  position: absolute;
+  left: 60px;
+  top: 25px;
+}
+
+#map > img {
+  height: 600px;
+}
+.place {
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+/* Standard syntax */
+@keyframes twinkle {
+  to {
+    opacity: 0;
+  }
+}
+.place img {
+  width: 15px;
+  opacity: 1;
+  animation: twinkle 500ms infinite alternate;
+}
+
+#publicEducateBuildIndex {
+  left: 361px;
+  top: 155px;
+}
+#libraryIndex {
+  left: 321px;
+  top: 229px;
+}
+#newActivityCenterIndex {
+  left: 286px;
+  top: 494px;
+}
+#southLaboratoryIndex {
+  left: 193px;
+  top: 275px;
+}
+#northLaboratoryIndex {
+  left: 140px;
+  top: 259px;
+}
+
+#firstRestrIndex {
+  left: 284px;
+  top: 457px;
+}
+#secondRestrIndex {
+  left: 284px;
+  top: 457px;
+}
+#fouthRestrIndex {
+  left: 286px;
+  top: 494px;
+}
+#islamicRestrIndex {
+  left: 286px;
+  top: 494px;
+}
+#adminRestrIndex {
+  left: 284px;
+  top: 170px;
+}
+
+#shenSiIndex {
+  left: 277px;
+  top: 551px;
+}
+#mingDeIndex {
+  left: 278px;
+  top: 409px;
+}
+#zhiShanIndex {
+  left: 331px;
+  top: 481px;
+}
+#geZhiIndex {
+  left: 203px;
+  top: 468px;
+}
+
+#adminBuildingIndex {
+  left: 293px;
+  top: 145px;
+}
+#sysuIndex {
+  left: 359px;
+  top: 38px;
+}
+
+#gymIndex {
+  left: 320px;
+  top: 295px;
+}
+#natatoriaIndex {
+  left: 251px;
+  top: 282px;
+}
+#naturalGrassIndex {
+  left: 382px;
+  top: 275px;
+}
+
+#grainRiverIndex {
+  left: 197px;
+  top: 246px;
+}
+#memorialArchwayIndex {
+  left: 317px;
+  top: 60px;
+}
+#bronzeIndex {
+  left: 319px;
+  top: 138px;
+}
+
+#schoolHospitalIndex {
+  left: 249px;
+  top: 393px;
+}
+#serverCenterIndex {
+  left: 224px;
+  top: 400px;
+}
+
+#station1Index {
+  left: 194px;
+  top: 424px;
+}
+#station2Index {
+  left: 434px;
+  top: 67px;
+}
+#station3Index {
+  left: 370px;
+  top: 115px;
+}
+#station4Index {
+  left: 287px;
+  top: 125px;
+}
